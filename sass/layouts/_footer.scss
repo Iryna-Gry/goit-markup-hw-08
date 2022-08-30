@@ -3,30 +3,62 @@
   background-color: $dark-bg-color;
   padding-top: 60px;
   padding-bottom: 60px;
+  @include flex;
+  flex-direction: column;
+  align-items: center;
   &-container {
-    display: flex;
+    @media screen and (min-width:$tablet){
+      display: flex;
     align-items: baseline;
     justify-content: space-between;
+    }
+    @media screen and (min-width:$desktop) {
+      display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    }
   }
   &-title {
     @include font-box(700, null, 1.14);
     text-transform: uppercase;
     color: $tertiary-text-color;
     margin-bottom: 20px;
+    @media screen and (max-width:calc($desktop - 1px)) {
+      text-align: center;
+    }
   }
   &-soc {
     @extend %flex;
     gap: 10px;
+    &-container {
+      @media screen and (max-width:calc($desktop - 1px)) {
+        margin-bottom: 60px;
+      }
+    }
   }
   &-form {
-    display: flex;
+    text-align: center;
+    @media screen and (min-width:$desktop) {
+      display: flex;
+    }
+
   }
 }
 .address {
   font-style: normal;
   margin-top: 20px;
+  @media screen and (max-width: calc($desktop - 1px)) {
+    &-container {
+      width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+  }
   &-item:not(:last-child) {
+    margin-bottom: 8px;
+  @media screen and (min-width:$desktop) {
     margin-bottom: 9px;
+  }
+  }
   }
 }
 .footer-address {
@@ -49,11 +81,15 @@
 }
 .mailing-input {
   width: 358px;
+  height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
-  margin-right: 12px;
   padding-left: 16px;
+  @media screen and (min-width:$desktop){
+    margin-right: 12px;
+  }
+  margin-right: 12px;
   &:focus {
     background-color: $main-bg-color;
     outline: transparent;

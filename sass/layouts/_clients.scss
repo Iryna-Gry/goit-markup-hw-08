@@ -1,11 +1,21 @@
 /* --------------------------Clients-------------------------------- */
 .logo-list {
-  max-width: 1170px;
+  max-width: 100%;
   @include flex;
+  flex-wrap: wrap;
+  gap: 30px;
   justify-content: space-between;
 }
+.logo-list-item {
+  width: calc((100% - 30px) / 2);
+  @media screen and (min-width:$tablet) {
+    width: calc((100% - 60px) / 3);
+  }
+  @media screen and (min-width:$desktop){
+    width: calc((100% - 150px) / 6);
+  }
+}
 .logo-link {
-  width: 170px;
   height: 92px;
   @include flex;
   border: 1px solid $icons-color;
@@ -14,6 +24,7 @@
   fill: currentColor;
   transition: border-color $transform-duration $time-function,
     color $transform-duration $time-function;
+  
   &:hover,
   &:focus {
     border-color: $accent-color;

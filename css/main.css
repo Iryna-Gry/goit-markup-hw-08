@@ -334,8 +334,10 @@ img {
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.member-list__card:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 768px) {
+  .member-list__card:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1199px) {
   .member-list__card {
@@ -876,7 +878,7 @@ img {
 
 /* --------------------------Clients-------------------------------- */
 .logo-list {
-  max-width: 1170px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -886,13 +888,29 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
+.logo-list-item {
+  width: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 769px) {
+  .logo-list-item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-list-item {
+    width: calc((100% - 150px) / 6);
+  }
+}
+
 .logo-link {
-  width: 170px;
   height: 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -920,17 +938,46 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-.footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 769px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 .footer-title {
   font-weight: 700;
@@ -940,21 +987,48 @@ img {
   color: #ffffff;
   margin-bottom: 20px;
 }
+@media screen and (max-width: 1199px) {
+  .footer-title {
+    text-align: center;
+  }
+}
 .footer-soc {
   gap: 10px;
 }
+@media screen and (max-width: 1199px) {
+  .footer-soc-container {
+    margin-bottom: 60px;
+  }
+}
 .footer-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .address {
   font-style: normal;
   margin-top: 20px;
 }
-.address-item:not(:last-child) {
-  margin-bottom: 9px;
+@media screen and (max-width: 1199px) {
+  .address-container {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .address-item:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+@media screen and (max-width: 1199px) and (min-width: 1200px) {
+  .address-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .footer-address {
@@ -979,11 +1053,17 @@ img {
 
 .mailing-input {
   width: 358px;
+  height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
-  margin-right: 12px;
   padding-left: 16px;
+  margin-right: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .mailing-input {
+    margin-right: 12px;
+  }
 }
 .mailing-input:focus {
   background-color: #ffffff;
