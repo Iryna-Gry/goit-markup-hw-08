@@ -42,7 +42,7 @@ display: block;
     text-decoration: none;
 }
 .container {
-    width: 1200px;
+    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -64,7 +64,7 @@ display: block;
     height: 120px;
     background: $secondary-bg-color;
     border-radius: 4px;
-    @extend %flex;
+    @include flex;
     margin-bottom: 30px;
 }
 

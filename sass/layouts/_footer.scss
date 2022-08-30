@@ -68,7 +68,7 @@
 .form-button {
   padding: 10px 28px;
   fill: currentColor;
-  @extend %flex;
+  @include flex;
   &-icon {
     margin-left: 10px;
   }

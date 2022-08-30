@@ -1,12 +1,12 @@
 .socials {
-  @extend %flex;
+  @include flex;
   gap: 10px;
 }
 .socials__link {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  @extend %flex;
+  @include flex;
   transition: color $transform-duration $time-function,
     background-color $transform-duration $time-function;
   &--light-bg {

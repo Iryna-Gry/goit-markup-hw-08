@@ -1,13 +1,13 @@
 /* --------------------------Clients-------------------------------- */
 .logo-list {
   max-width: 1170px;
-  @extend %flex;
+  @include flex;
   justify-content: space-between;
 }
 .logo-link {
   width: 170px;
   height: 92px;
-  @extend %flex;
+  @include flex;
   border: 1px solid $icons-color;
   border-radius: 4px;
   color: $icons-color;

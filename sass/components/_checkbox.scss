@@ -4,7 +4,7 @@
 .checkbox-label {
     @include font-box(400, 14px, 1.71);
     color: $primary-text-color;
-    @extend %flex;
+    @include flex;
     margin-bottom: 30px;
 }
 .checkbox-link {
@@ -27,7 +27,7 @@
 .policy-icon {
     width: 16px;
     height: 15px;
-    @extend %flex;
+    @include flex;
     background-size: contain;
     background-repeat: no-repeat;
     fill: transparent;

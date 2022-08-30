@@ -1,6 +1,9 @@
 /* -------------------------Site-nav ------------------------*/
 .site-nav {
-    display: flex;
+    display: none;
+    @media screen and (min-width:$mobile) {
+        display: flex;  
+    }
     &__item:not(:last-child) {
         margin-right: 50px;
     }

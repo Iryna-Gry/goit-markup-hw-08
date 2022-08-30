@@ -3,19 +3,30 @@
   position: fixed;
   top: 0;
   z-index: 1;
-  width: 100%;
+  width: 100vw;
   border-bottom: 1px solid #ececec;
   background-color: $main-bg-color;
-  & .main-nav {
-    @extend %flex;
+  @media screen and (max-width:$mobile) {
+    padding-top: 16px;
+  padding-bottom: 16px;
   }
-    &__logo {
-        margin-right: 93px;
-      }
+
+  & .main-nav {
+    @media screen  and (min-width:$mobile) {
+      @include flex;  
+    }
+  }
+  &__logo {
+    @media screen  and (min-width:$mobile){
+    margin-right: 93px;
+  }
+  }
   }
 /* ----------------------Nav----------------------------- */
 .navigation {
-  @extend %flex;
+  @media screen and (min-width:$mobile) {
+    @include flex; 
+  }
 }
 .link.current {
   color: $accent-color;
