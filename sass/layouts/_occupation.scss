@@ -1,0 +1,29 @@
+/* --------------------- Occupation----------------*/
+.section.occupation {
+  padding-top: 0;
+}
+.occupation__list {
+  display: flex;
+}
+.occupation__item {
+  width: calc((100% - 60px) / 3);
+  position: relative;
+}
+.occupation__name {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+.occupation__text {
+  display: block;
+  margin: 27px auto;
+  @include font-box(700, null, 1.14);
+  text-align: center;
+  text-transform: uppercase;
+  color: $tertiary-text-color;
+}
+.occupation__item:not(:last-child) {
+  margin-right: 30px;
+}

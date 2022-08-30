@@ -1,0 +1,22 @@
+/* --------------------------Clients-------------------------------- */
+.logo-list {
+  max-width: 1170px;
+  @extend %flex;
+  justify-content: space-between;
+}
+.logo-link {
+  width: 170px;
+  height: 92px;
+  @extend %flex;
+  border: 1px solid $icons-color;
+  border-radius: 4px;
+  color: $icons-color;
+  fill: currentColor;
+  transition: border-color $transform-duration $time-function,
+    color $transform-duration $time-function;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}

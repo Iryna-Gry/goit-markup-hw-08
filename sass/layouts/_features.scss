@@ -1,0 +1,21 @@
+/* -------------------------Features ------------------------*/
+.pros-list {
+  display: flex;
+  &__item {
+    width: calc((100% - 90px) / 4);
+    /* flex-basis: calc((100% - 90px)/4); */
+  }
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__title {
+    @include font-box(700, null, 1.14, null);
+    text-transform: uppercase;
+    color: $secondary-text-color;
+
+    margin-bottom: 10px;
+  }
+  &__text {
+    line-height: 1.71;
+  }
+}

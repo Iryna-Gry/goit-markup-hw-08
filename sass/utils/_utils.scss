@@ -1,0 +1,85 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    @include font-box(null, 14px, null);
+    color: var(--primary-text-color);
+    background-color: var(--main-bg-color);
+}
+
+.button {
+    cursor: pointer;
+    line-height: 1.62;
+    @include font-box(700, 16px, 1.88, 0.06em);
+    color: $tertiary-text-color;
+    background-color: $accent-color;
+  
+    border-color: transparent;
+    border-radius: 4px;
+    transition: background-color $transform-duration $time-function,
+      box-shadow $transform-duration $time-function;
+      &:hover,
+      &:focus {
+          background-color: $secondary-accent-color;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+      }
+}
+ul,
+li,
+h1,
+h2,
+h3,
+p {
+    padding: 0;
+    margin: 0;
+}
+img {
+display: block;
+}
+/* -------------------------Template to delete markers in lists ------------------------*/
+.list {
+    list-style: none;
+}
+/* -------------------------Link template ------------------------*/
+.link {
+    text-decoration: none;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    /* outline: 2px solid #188ce8; */
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.section-title {
+    @include font-box(700, 36px, 1.16);
+    text-align: center;
+    color: $secondary-text-color;
+
+    margin-bottom: 50px;
+}
+.thumb {
+    max-width: 270px;
+    height: 120px;
+    background: $secondary-bg-color;
+    border-radius: 4px;
+    @extend %flex;
+    margin-bottom: 30px;
+}
+
+.vis-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
