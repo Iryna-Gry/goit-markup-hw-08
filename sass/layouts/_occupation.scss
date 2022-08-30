@@ -8,6 +8,9 @@
 .occupation__item {
   width: calc((100% - 60px) / 3);
   position: relative;
+  &:not(:last-child) {
+      margin-right: 30px;
+    }
 }
 .occupation__name {
   position: absolute;
@@ -23,7 +26,4 @@
   text-align: center;
   text-transform: uppercase;
   color: $tertiary-text-color;
-}
-.occupation__item:not(:last-child) {
-  margin-right: 30px;
 }

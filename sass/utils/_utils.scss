@@ -1,8 +1,8 @@
 body {
     font-family: 'Roboto', sans-serif;
     @include font-box(null, 14px, null);
-    color: var(--primary-text-color);
-    background-color: var(--main-bg-color);
+    color: $primary-text-color;
+    background-color: $main-bg-color;
 }
 
 .button {
@@ -11,7 +11,6 @@ body {
     @include font-box(700, 16px, 1.88, 0.06em);
     color: $tertiary-text-color;
     background-color: $accent-color;
-  
     border-color: transparent;
     border-radius: 4px;
     transition: background-color $transform-duration $time-function,

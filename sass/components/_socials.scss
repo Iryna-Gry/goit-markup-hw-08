@@ -13,7 +13,7 @@
     color: $icons-color;
     fill: currentColor;
     &:hover,
-    :focus {
+    &:focus {
       background-color: $accent-color;
       color: $tertiary-text-color;
     }
@@ -23,7 +23,7 @@
     color: $tertiary-text-color;
     fill: currentColor;
     &:hover,
-    :focus {
+    &:focus {
       background-color: $accent-color;
     }
   }

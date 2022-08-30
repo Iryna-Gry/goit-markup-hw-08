@@ -26,8 +26,8 @@
         background-color $transform-duration $time-function,
         box-shadow $transform-duration $time-function;
     &:hover,
-    :focus,
-    .current {
+    &:focus,
+    &.current {
             color: $tertiary-text-color;
             background-color: $accent-color;
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -42,7 +42,7 @@
     width: 370px;
     transition: box-shadow $transform-duration $time-function;
     &:hover,
-    :focus {
+    &:focus {
             box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
                 1px 4px 6px rgba(0, 0, 0, 0.16);
         }
