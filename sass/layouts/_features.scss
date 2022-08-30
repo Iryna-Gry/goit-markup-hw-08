@@ -1,12 +1,18 @@
 /* -------------------------Features ------------------------*/
 .pros-list {
-  display: flex;
-  &__item {
-    width: calc((100% - 90px) / 4);
-    /* flex-basis: calc((100% - 90px)/4); */
-  }
   &__item:not(:last-child) {
-    margin-right: 30px;
+    @media screen and (max-width:calc($tablet - 1px)){
+    margin-bottom: 30px;
+  }
+}
+  @media screen and (min-width:$tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    flex-basis: calc((100% - 30px) / 2);
+    &__item {
+      width: calc((100% - 30px) / 2);
+  }
   }
   &__title {
     @include font-box(700, null, 1.14, null);

@@ -1,6 +1,9 @@
 /* --------------------- Occupation----------------*/
 .section.occupation {
   padding-top: 0;
+  @media screen and (max-width: calc($desktop - 1px)) {
+    display: none;
+  }
 }
 .occupation__list {
   display: flex;

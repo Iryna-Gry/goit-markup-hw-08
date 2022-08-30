@@ -44,5 +44,8 @@
   margin-bottom: 30px;
 }
 .hero__button {
-  padding: 10px 32px;
+  padding: 10px 24px;
+  @media screen and (min-width:$desktop) {
+    padding: 10px 32px;
+  }
 }
