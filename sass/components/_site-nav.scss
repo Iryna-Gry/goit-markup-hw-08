@@ -7,6 +7,9 @@
     &__item:not(:last-child) {
         margin-right: 50px;
     }
+    &--menu{
+        margin-bottom: 306px;
+    }
 }
 .site-nav__link {
     @include font-box(500, null, 1.14, 0.02em);
@@ -19,5 +22,19 @@
     &:hover,
     &:focus {
         color: $accent-color;
+    }
+    &--menu {
+        @include font-box(500, 40px, 1.18, 0.02em);
+        color: $secondary-text-color;
+        transition: color $transform-duration $time-function;
+        &:hover,
+        &:focus {
+            color: $accent-color;
+        }
+    }
+}
+.site-nav__item--menu {
+    &:not(:last-child){
+        margin-bottom: 32px;
     }
 }

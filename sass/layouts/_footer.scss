@@ -8,19 +8,20 @@
   align-items: center;
   &-container {
     width: 100%;
-    @media screen and (min-width:$tablet){
+    @include tablet {
       display: flex;
     align-items: baseline;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     }
-    @media screen and (min-width:$desktop) {
+    @include desktop {
       display: flex;
     align-items: baseline;
     justify-content: space-between;
     }
   }
   &-title {
-    @include font-box(700, null, 1.14);
+    @include font-box(700, 14px, 1.14);
     text-transform: uppercase;
     color: $tertiary-text-color;
     margin-bottom: 20px;
@@ -29,19 +30,23 @@
     }
   }
   &-soc {
-    @extend %flex;
+    @include flex;
     gap: 10px;
     &-container {
-      @media screen and (max-width:calc($desktop - 1px)) {
-        margin-bottom: 60px;
+      margin-bottom: 60px;
+      @include desktop {
+        margin-bottom: 0;
       }
     }
   }
   &-form {
     width: 100%;
-    text-align: center;
-    @media screen and (min-width:$desktop) {
-      display: flex;
+@include flex;
+flex-wrap: wrap;
+    @include desktop {
+@include flex;
+      flex-wrap: nowrap;
+width: 570px;
     }
 
   }
@@ -49,20 +54,21 @@
 .address {
   font-style: normal;
   margin-top: 20px;
-  @media screen and (max-width: calc($desktop - 1px)) {
-    &-container {
-      width: 100%;
+  &-container {
     text-align: center;
     margin-bottom: 60px;
-  }
+    @include desktop {
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }    
   &-item:not(:last-child) {
     margin-bottom: 8px;
-  @media screen and (min-width:$desktop) {
+  @include desktop {
     margin-bottom: 9px;
   }
   }
   }
-}
 .footer-address {
   line-height: 1.71;
   color: $tertiary-text-color;
@@ -88,10 +94,11 @@
   border-radius: 4px;
   background-color: transparent;
   padding-left: 16px;
-  @media screen and (min-width:$desktop){
+  margin-bottom: 20px;
+  @include desktop {
     margin-right: 12px;
+    margin-bottom: 0;
   }
-  margin-right: 12px;
   &:focus {
     background-color: $main-bg-color;
     outline: transparent;

@@ -1,10 +1,14 @@
 /* -------------------------Contacts------------------------*/
 .contact {
     display: none;
-    @media screen and (min-width:$mobile) {
+    @include mobile {
     display: flex;
     margin-left: auto;
 }
+&--menu {
+    margin-bottom: 64px;
+}
+
     &>.contact__item+.contact__item {
         margin-left: 50px;
     }
@@ -26,4 +30,15 @@
              color: $accent-color;
          }
      }
+     &__item--menu:not(:last-child) {
+        margin-bottom: 32px;
+    }
+    &__link--menu--blue {
+        @include font-box(500, 34px, 1.18, 0.02em);
+        color: $accent-color;
+    }
+    &__link--menu {
+        @include font-box(500, 24px, 1.17, 0.02em);
+        color: $primary-text-color;
+    }
 }

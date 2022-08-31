@@ -4,14 +4,13 @@
   @include flex;
   flex-wrap: wrap;
   gap: 30px;
-  justify-content: space-between;
 }
 .logo-list-item {
   width: calc((100% - 30px) / 2);
-  @media screen and (min-width:$tablet) {
+  @include tablet {
     width: calc((100% - 60px) / 3);
   }
-  @media screen and (min-width:$desktop){
+  @include desktop {
     width: calc((100% - 150px) / 6);
   }
 }

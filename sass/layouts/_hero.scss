@@ -2,7 +2,7 @@
 .hero {
   background-color: #c4c4c4;
   height: 400px;
-  max-width: 1600px;
+  max-width: 100%;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -15,7 +15,7 @@
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width:$desktop) {
+  @include desktop {
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
@@ -23,7 +23,7 @@
 }
 .hero--mg { 
   margin-top: 60px;
-  @media screen and (min-width:$tablet) {
+  @include tablet {
     margin-top: 80px;
   }
   
@@ -35,7 +35,7 @@
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width:$desktop) {
+  @include desktop {
     max-width: 696px;
     @include font-box(900, 44px, 1.36, 0.06em);
   }
@@ -45,7 +45,7 @@
 }
 .hero__button {
   padding: 10px 24px;
-  @media screen and (min-width:$desktop) {
+  @include desktop {
     padding: 10px 32px;
   }
 }

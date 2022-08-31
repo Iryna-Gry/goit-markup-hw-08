@@ -47,7 +47,10 @@
         border: 1px solid $accent-color;
     }
     &::placeholder {
-        @include font-box(400, 12px, 1.17, 0.01em);
+        @include font-box(400, 14px, 1.14, 0.01em);
         color: rgba(117, 117, 117, 0.5);
+        @include desktop {
+            @include font-box(400, 12px, 1.17, 0.01em);
+        }
     }
 }

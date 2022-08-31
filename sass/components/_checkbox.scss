@@ -2,10 +2,14 @@
     margin-right: 8px;
 }
 .checkbox-label {
-    @include font-box(400, 14px, 1.71);
+    @include font-box(400, 12px, 1.17);
     color: $primary-text-color;
     @include flex;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
+    @include desktop{
+        @include font-box(400, 14px, 1.71);
+        margin-bottom: 30px;
+    }
 }
 .checkbox-link {
     text-decoration: underline;

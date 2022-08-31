@@ -43,16 +43,24 @@ display: block;
     text-decoration: none;
 }
 .container {
-    max-width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
+    @include mobile {
+        max-width: 480px;
+    }
+    @include tablet {
+        max-width: 768px;
+    }
+    @include desktop {
+        max-width: 1200px;
+    }
     /* outline: 2px solid #188ce8; */
 }
 .section {
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and (min-width:$desktop) {
+    @include desktop {
         padding-top: 94px;
     padding-bottom: 94px;
     }
@@ -62,7 +70,7 @@ display: block;
     text-align: center;
     color: $secondary-text-color;
     margin-bottom: 30px;
-    @media screen and (min-width:$desktop) {
+    @include desktop {
         @include font-box(700, 36px, 1.16);  
         margin-bottom: 50px;
     } 
@@ -73,13 +81,7 @@ display: block;
     @include flex;
     height: 120px;
     margin-bottom: 30px;
-    @media screen  and (min-width:$tablet){
-        flex-wrap: wrap;
-        width: calc((100% - 30px) / 2);
-    }
-    @media screen  and (min-width:$desktop){
-        width: calc((100% - 90px) / 4);
-    }
+    width: 100%;
 }
 
 .vis-hidden {
