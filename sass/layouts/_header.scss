@@ -6,25 +6,27 @@
   width: 100vw;
   border-bottom: 1px solid #ececec;
   background-color: $main-bg-color;
-  @media screen and (max-width:$mobile) {
+  @media screen and (max-width:calc(768px - 1px)) {
     padding-top: 16px;
   padding-bottom: 16px;
   }
-
   & .main-nav {
-    @media screen  and (min-width:$mobile) {
+    @include tablet {
       @include flex;  
     }
   }
   &__logo {
-    @media screen  and (min-width:$mobile){
+    @include tablet {
+      margin-right: 87px;
+    }
+    @include desktop {
     margin-right: 93px;
   }
   }
   }
 /* ----------------------Nav----------------------------- */
 .navigation {
-  @media screen and (min-width:$mobile) {
+  @include tablet {
     @include flex; 
   }
 }

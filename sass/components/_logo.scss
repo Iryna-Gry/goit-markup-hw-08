@@ -2,7 +2,7 @@
   font-family: "Raleway", sans-serif;
   @include font-box(700, 24px, 1.17); 
   text-decoration: none;
-  @media screen and (min-width:$desktop) {
+  @include desktop {
     @include font-box(700, 26px, 1.19);
   }
   &--color-main {

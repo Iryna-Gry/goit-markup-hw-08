@@ -1,7 +1,7 @@
 /* --------------------- Occupation----------------*/
 .section.occupation {
   padding-top: 0;
-  @media screen and (max-width: calc($desktop - 1px)) {
+  @media screen and (max-width: calc(1200px - 1px)) {
     display: none;
   }
 }
