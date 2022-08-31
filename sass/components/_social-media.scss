@@ -1,5 +1,10 @@
 .social-media--menu {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  @media screen and (max-width: 440px) {
+    justify-content: center;
+  }
 }
 .social-media__item {
   display: block;
