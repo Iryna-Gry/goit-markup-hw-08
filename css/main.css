@@ -398,6 +398,7 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   row-gap: 10px;
