@@ -28,17 +28,14 @@
             ><span class="logo--color-dark">Studio</span></a
           >
           <button
-          class="menu-toggle js-open-menu"
-          aria-expanded="false"
-          aria-controls="mobile-menu"
-        >
-          <svg
-            width="40"
-            height="40"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
           >
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
           <ul class="site-nav list menu">
             <li class="site-nav__item">
               <a href="./index.html" class="site-nav__link link current"
@@ -146,31 +143,67 @@
           <h2 class="section-title occupation__title">Чим ми займаємося</h2>
           <ul class="occupation__list list">
             <li class="occupation__item">
-              <img
-                src="./images/photo-1.jpg"
-                alt="десктопні додатки"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/desktop-370.webp    1x,
+                    ./images/desktop-370@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/desktop-370.jpg    1x,
+                    ./images/desktop-370@2x.jpg 2x
+                  "
+                  src="./images/desktop-370.jpg"
+                  alt="десктопні додатки"
+                />
+              </picture>
               <div class="occupation__name">
                 <p class="occupation__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="occupation__item">
-              <img
-                src="./images/photo-2.jpg"
-                alt="мобільні додатки"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mobile-370.webp    1x,
+                    ./images/mobile-370@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/mobile-370.jpg    1x,
+                    ./images/mobile-370@2x.jpg 2x
+                  "
+                  src="./images/mobile-370.jpg"
+                  alt="мобільні додатки"
+                />
+              </picture>
               <div class="occupation__name">
                 <p class="occupation__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="occupation__item">
-              <img
-                src="./images/photo-3.jpg"
-                alt="дизайнерські рішення"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/design-370.webp    1x,
+                    ./images/design-370@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/design-370.jpg    1x,
+                    ./images/design-370@2x.jpg 2x
+                  "
+                  src="./images/design-370.jpg"
+                  alt="дизайнерські рішення"
+                />
+              </picture>
               <div class="occupation__name">
                 <p class="occupation__text">Дизайнерські рішення</p>
               </div>
@@ -183,11 +216,37 @@
           <h2 class="section-title team__title">Наша команда</h2>
           <ul class="member-list list">
             <li class="member-list__card">
-              <img
-                src="./images/team-card-1.jpg"
-                alt="Ігор Дем'яненко"
-                width="270"
-              />
+              <picture
+                ><source
+                  srcset="./images/team-card-1-270.webp 270w"
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team-card-1-354.webp 354w"
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team-card-1-450.webp 450w"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team-card-1-900.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/team-card-1-270.jpg 270w,
+                    ./images/team-card-1-354.jpg 354w,
+                    ./images/team-card-1-450.jpg 450w,
+                    ./images/team-card-1-900.jpg 900w
+                  "
+                  src="./images/team-card-1-450.jpg"
+                  alt="Ігор Дем'яненко"
+                  sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+                />
+              </picture>
               <div class="member-list__wrap">
                 <h3 class="member-list__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="member-list__position">Product Designer</p>
@@ -230,14 +289,42 @@
               </div>
             </li>
             <li class="member-list__card">
-              <img
-                src="./images/team-card-2.jpg"
+              <picture
+                ><source
+                  srcset="./images/team-card-2-270.webp 270w"
+                  media="(min-width:1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team-card-2-354.webp 354w"
+                  media="(min-width:768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team-card-2-450.webp 450w"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/team-card-2-900.webp 2x"
+                  type="image/webp"
+                />
+                <img
+                  srcset="
+                    ./images/team-card-2-270.jpg 270w,
+                    ./images/team-card-2-354.jpg 354w,
+                    ./images/team-card-2-450.jpg 450w,
+                    ./images/team-card-2-900.jpg 900w
+                  "
+                src="./images/team-card-2-450.jpg"
                 alt="Ольга Рєпіна"
-                width="270"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
               />
+              </picture>
               <div class="member-list__wrap">
                 <h3 class="member-list__title">Ольга Рєпіна</h3>
-                <p lang="en" class="member-list__position">Frontend Developer</p>
+                <p lang="en" class="member-list__position">
+                  Frontend Developer
+                </p>
                 <ul class="socials list">
                   <li class="socials__item">
                     <a
@@ -277,11 +364,37 @@
               </div>
             </li>
             <li class="member-list__card">
-              <img
-                src="./images/team-card-3.jpg"
-                alt="Микола Тарасов"
-                width="270"
+              <picture
+              ><source
+                srcset="./images/team-card-3-270.webp 270w"
+                media="(min-width:1200px)"
+                type="image/webp"
               />
+              <source
+                srcset="./images/team-card-3-354.webp 354w"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/team-card-3-450.webp 450w"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/team-card-3-900.webp 2x"
+                type="image/webp"
+              />
+              <img
+                srcset="
+                  ./images/team-card-3-270.jpg 270w,
+                  ./images/team-card-3-354.jpg 354w,
+                  ./images/team-card-3-450.jpg 450w,
+                  ./images/team-card-3-900.jpg 900w
+                "
+                src="./images/team-card-3-450.jpg"
+                alt="Микола Тарасов"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              />
+              </picture>
               <div class="member-list__wrap">
                 <h3 class="member-list__title">Микола Тарасов</h3>
                 <p lang="en" class="member-list__position">Marketing</p>
@@ -324,11 +437,37 @@
               </div>
             </li>
             <li class="member-list__card">
-              <img
-                src="./images/team-card-4.jpg"
-                alt="Михайло Єрмаков"
-                width="270"
+              <picture
+              ><source
+                srcset="./images/team-card-4-270.webp 270w"
+                media="(min-width:1200px)"
+                type="image/webp"
               />
+              <source
+                srcset="./images/team-card-4-354.webp 354w"
+                media="(min-width:768px)"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/team-card-4-450.webp 450w"
+                type="image/webp"
+              />
+              <source
+                srcset="./images/team-card-4-900.webp 2x"
+                type="image/webp"
+              />
+              <img
+                srcset="
+                  ./images/team-card-4-270.jpg 270w,
+                  ./images/team-card-4-354.jpg 354w,
+                  ./images/team-card-4-450.jpg 450w,
+                  ./images/team-card-4-900.jpg 900w
+                "
+                src="./images/team-card-4-450.jpg"
+                alt="Михайло Єрмаков"
+                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
+              />
+            </picture>
               <div class="member-list__wrap">
                 <h3 class="member-list__title">Михайло Єрмаков</h3>
                 <p lang="en" class="member-list__position">UI Designer</p>
@@ -594,33 +733,53 @@
     </div>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg class="close-menu-icon"
-          fill="currentColor"
-          width="24"
-          height="24"
-        >
+        <svg class="close-menu-icon" fill="currentColor" width="24" height="24">
           <use href="./images/icons.svg#icon-close-menu"></use>
         </svg>
       </button>
-<div class="site-nav-container--menu">
-      <ul class="site-nav--menu list">
-        <li class="site-nav__item--menu"><a href="./index.html" class="site-nav__link--menu link">Студія</a></li>
-        <li class="site-nav__item--menu"><a href="./portfolio.html" class="site-nav__link--menu link">Портфоліо</a></li>
-        <li class="site-nav__item--menu"><a href="#" class="site-nav__link--menu link">Контакти</a></li>
-      </ul>
-    </div>
-    <div class="contact-container--menu">
-      <ul class="contact--menu list">
-        <li class="contact__item--menu"><a href="tel:+380961111111" class="contact__link--menu--blue link">+38 096 111 11 11</a></li>
-        <li class="contact__item--menu"><a href="mailto:info@devstudio.com" class="contact__link--menu link">info@devstudio.com</a></li>
-      </ul>
-      <ul class="social-media--menu list">
-        <li class="social-media__item"><a href="#" class="social-media__link link">Instagram</a></li>
-        <li class="social-media__item"><a href="#" class="social-media__link link">Twitter</a></li>
-        <li class="social-media__item"><a href="#" class="social-media__link link">Facebook</a></li>
-        <li class="social-media__item"><a href="#" class="social-media__link link">LinkedIn</a></li>
-      </ul>
-    </div>
+      <div class="site-nav-container--menu">
+        <ul class="site-nav--menu list">
+          <li class="site-nav__item--menu">
+            <a href="./index.html" class="site-nav__link--menu link">Студія</a>
+          </li>
+          <li class="site-nav__item--menu">
+            <a href="./portfolio.html" class="site-nav__link--menu link"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="site-nav__item--menu">
+            <a href="#" class="site-nav__link--menu link">Контакти</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-container--menu">
+        <ul class="contact--menu list">
+          <li class="contact__item--menu">
+            <a href="tel:+380961111111" class="contact__link--menu--blue link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="contact__item--menu">
+            <a href="mailto:info@devstudio.com" class="contact__link--menu link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="social-media--menu list">
+          <li class="social-media__item">
+            <a href="#" class="social-media__link link">Instagram</a>
+          </li>
+          <li class="social-media__item">
+            <a href="#" class="social-media__link link">Twitter</a>
+          </li>
+          <li class="social-media__item">
+            <a href="#" class="social-media__link link">Facebook</a>
+          </li>
+          <li class="social-media__item">
+            <a href="#" class="social-media__link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <script

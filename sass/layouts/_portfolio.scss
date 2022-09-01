@@ -57,11 +57,13 @@
 .portfolio-item {
     width: 100%;
     max-width: 450px;
-    transition: box-shadow $transform-duration $time-function;
+    transition: box-shadow $transform-duration $time-function; 
     @include tablet {
+        max-width: 354px;
         width: calc((100% - 30px) / 2);
     }
     @include desktop {
+        max-width: 370px;
         width: calc((100% - 60px) / 3);
     }
     &:hover,
@@ -74,7 +76,18 @@
         border-right: 1px solid #eeeeee;
         border-left: 1px solid #eeeeee;
         padding: 20px 24px;
-        width: 100%;
+        max-width: 450px;
+        @include tablet {
+            max-width: 354px;
+        }
+        @include desktop {
+            max-width: 370px;
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:1199px) {
+        &:first-child .description {
+            padding-bottom: 56px;
+    }     
     }
 }
 .image-combo {
@@ -89,6 +102,7 @@
     @include flex;
     background: rgba(33, 150, 243, 0.9);
     transition: transform $transform-duration $time-function;
+    
     .portfolio-link:hover &,
     .portfolio-link:focus & {
         transform: translateY(-100%);
