@@ -6,13 +6,13 @@
   width: 100vw;
   border-bottom: 1px solid #ececec;
   background-color: $main-bg-color;
-  @media screen and (max-width:calc(768px - 1px)) {
+  @media screen and (max-width: calc(768px - 1px)) {
     padding-top: 16px;
-  padding-bottom: 16px;
+    padding-bottom: 16px;
   }
   & .main-nav {
     @include tablet {
-      @include flex;  
+      @include flex;
     }
   }
   &__logo {
@@ -20,14 +20,14 @@
       margin-right: 87px;
     }
     @include desktop {
-    margin-right: 93px;
+      margin-right: 93px;
+    }
   }
-  }
-  }
+}
 /* ----------------------Nav----------------------------- */
 .navigation {
   @include tablet {
-    @include flex; 
+    @include flex;
   }
 }
 .link.current {

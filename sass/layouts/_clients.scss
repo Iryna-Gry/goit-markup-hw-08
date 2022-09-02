@@ -23,7 +23,7 @@
   fill: currentColor;
   transition: border-color $transform-duration $time-function,
     color $transform-duration $time-function;
-  
+
   &:hover,
   &:focus {
     border-color: $accent-color;

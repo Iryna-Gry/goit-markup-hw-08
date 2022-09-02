@@ -18,7 +18,6 @@
   }
 }
 .social-media__link {
-    @include font-box(500, 18px, 1.22, 0.02em);
-    color: $accent-color;
-    
+  @include font-box(500, 18px, 1.22, 0.02em);
+  color: $accent-color;
 }

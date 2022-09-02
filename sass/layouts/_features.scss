@@ -2,23 +2,23 @@
 .pros-list {
   display: flex;
   flex-direction: column;
+  gap: 30px;
+  @include tablet {
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 30px;
-    @include tablet {
-      flex-direction: row;
-      flex-wrap: wrap;
-      gap: 30px;
-      }
+  }
   &__item {
     width: 100%;
-  @include mobile {
-  max-width: 450px;
-}
-@include tablet {
-  width: calc((100% - 30px) / 2);
-}
-@include desktop {
-  width: calc((100% - 90px) / 4);
-}
+    @include mobile {
+      max-width: 450px;
+    }
+    @include tablet {
+      width: calc((100% - 30px) / 2);
+    }
+    @include desktop {
+      width: calc((100% - 90px) / 4);
+    }
   }
   &__title {
     @include font-box(700, null, 1.14, null);

@@ -1,39 +1,39 @@
 /* -------------------------Site-nav ------------------------*/
 .site-nav {
-    display: none;
+  display: none;
+  @include tablet {
+    display: flex;
+  }
+  &__item:not(:last-child) {
     @include tablet {
-        display: flex;  
+      margin-right: 50px;
     }
-    &__item:not(:last-child) {
-        @include tablet {
-            margin-right: 50px;
-        }
-    }
+  }
 }
 .site-nav__link {
-    @include font-box(500, null, 1.14, 0.02em);
+  @include font-box(500, null, 1.14, 0.02em);
+  color: $secondary-text-color;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  position: relative;
+  transition: color $transform-duration $time-function;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+  &--menu {
+    @include font-box(500, 40px, 1.18, 0.02em);
     color: $secondary-text-color;
-    display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    position: relative;
     transition: color $transform-duration $time-function;
     &:hover,
     &:focus {
-        color: $accent-color;
+      color: $accent-color;
     }
-    &--menu {
-        @include font-box(500, 40px, 1.18, 0.02em);
-        color: $secondary-text-color;
-        transition: color $transform-duration $time-function;
-        &:hover,
-        &:focus {
-            color: $accent-color;
-        }
-    }
+  }
 }
 .site-nav__item--menu {
-    &:not(:last-child){
-        margin-bottom: 32px;
-    }
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
