@@ -26,9 +26,20 @@
             ><span class="logo--color-main">Web</span
             ><span class="logo--color-dark">Studio</span></a
           >
-          <ul class="site-nav list">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <ul class="site-nav list menu">
             <li class="site-nav__item">
-              <a href="./index.html" class="site-nav__link link">Студія</a>
+              <a href="./index.html" class="site-nav__link link"
+                >Студія</a
+              >
             </li>
             <li class="site-nav__item">
               <a href="./portfolio.html" class="site-nav__link link current"
@@ -86,11 +97,37 @@
             <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <div class="image-combo">
-                  <img srcset="./images/portfolio-work-1.jpg 1x, ./images/portfolio-work-1@2x.jpg 2x"
-                    src="./images/portfolio-work-1.jpg"
-                    alt="веб-сайт"
-                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-                  />
+                  <picture>
+                    <source
+                      srcset="./images/portfolio-work-1-370.webp 370w"
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-1-354.webp 354w"
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-1-450.webp 450w"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-1-900.webp 2x"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                      ./images/portfolio-work-1-370.jpg 370w,
+                      ./images/portfolio-work-1-354.jpg 354w,
+                      ./images/portfolio-work-1-450.jpg 450w,
+                      ./images/portfolio-work-1-900.jpg 900w
+                    "
+                    src="./images/portfolio-work-1-450.jpg"
+                      alt="веб-сайт"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                    />
+                  </picture>
                   <div class="image-description">
                     <p class="image-description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -109,11 +146,37 @@
             <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <div class="image-combo">
-                  <img srcset="./images/portfolio-work-2.jpg 1x, ./images/portfolio-work-2@2x.jpg 2x"
-                    src="./images/portfolio-work-2.jpg"
+                  <picture>
+                    <source
+                      srcset="./images/portfolio-work-2-370.webp 370w"
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-2-354.webp 354w"
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-2-450.webp 450w"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-2-900.webp 2x"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                      ./images/portfolio-work-2-370.jpg 370w,
+                      ./images/portfolio-work-2-354.jpg 354w,
+                      ./images/portfolio-work-2-450.jpg 450w,
+                      ./images/portfolio-work-2-900.jpg 900w
+                    "
+                    src="./images/portfolio-work-2-450.jpg"
                     alt="дизайн"
                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
+                  </picture>
                   <div class="image-description">
                     <p class="image-description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -134,11 +197,37 @@
             <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <div class="image-combo">
-                  <img srcset="./images/portfolio-work-3.jpg 1x, ./images/portfolio-work-3@2x.jpg 2x"
-                    src="./images/portfolio-work-3.jpg"
+                  <picture>
+                    <source
+                      srcset="./images/portfolio-work-3-370.webp 370w"
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-3-354.webp 354w"
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-3-450.webp 450w"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-3-900.webp 2x"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                      ./images/portfolio-work-3-370.jpg 370w,
+                      ./images/portfolio-work-3-354.jpg 354w,
+                      ./images/portfolio-work-3-450.jpg 450w,
+                      ./images/portfolio-work-3-900.jpg 900w
+                    "
+                    src="./images/portfolio-work-3-450.jpg"
                     alt="додаток"
                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
+                  </picture>
                   <div class="image-description">
                     <p class="image-description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -157,11 +246,37 @@
             <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <div class="image-combo">
-                  <img srcset="./images/portfolio-work-4.jpg 1x, ./images/portfolio-work-4@2x.jpg 2x"
-                    src="./images/portfolio-work-4.jpg"
+                  <picture>
+                    <source
+                      srcset="./images/portfolio-work-4-370.webp 370w"
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-4-354.webp 354w"
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-4-450.webp 450w"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-4-900.webp 2x"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                      ./images/portfolio-work-4-370.jpg 370w,
+                      ./images/portfolio-work-4-354.jpg 354w,
+                      ./images/portfolio-work-4-450.jpg 450w,
+                      ./images/portfolio-work-4-900.jpg 900w
+                    "
+                    src="./images/portfolio-work-4-450.jpg"
                     alt="маркетинг"
                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
+                  </picture>
                   <div class="image-description">
                     <p class="image-description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -180,11 +295,37 @@
             <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <div class="image-combo">
-                  <img srcset="./images/portfolio-work-5.jpg 1x, ./images/portfolio-work-5@2x.jpg 2x"
-                    src="./images/portfolio-work-5.jpg"
+                  <picture>
+                    <source
+                      srcset="./images/portfolio-work-5-370.webp 370w"
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-5-354.webp 354w"
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-5-450.webp 450w"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-5-900.webp 2x"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                      ./images/portfolio-work-5-370.jpg 370w,
+                      ./images/portfolio-work-5-354.jpg 354w,
+                      ./images/portfolio-work-5-450.jpg 450w,
+                      ./images/portfolio-work-5-900.jpg 900w
+                    "
+                    src="./images/portfolio-work-5-450.jpg"
                     alt="додаток"
                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
+                  </picture>
                   <div class="image-description">
                     <p class="image-description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -203,11 +344,37 @@
             <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <div class="image-combo">
-                  <img srcset="./images/portfolio-work-6.jpg 1x, ./images/portfolio-work-6@2x.jpg 2x"
-                    src="./images/portfolio-work-6.jpg"
+                  <picture>
+                    <source
+                      srcset="./images/portfolio-work-6-370.webp 370w"
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-6-354.webp 354w"
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-6-450.webp 450w"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-6-900.webp 2x"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                      ./images/portfolio-work-6-370.jpg 370w,
+                      ./images/portfolio-work-6-354.jpg 354w,
+                      ./images/portfolio-work-6-450.jpg 450w,
+                      ./images/portfolio-work-6-900.jpg 900w
+                    "
+                    src="./images/portfolio-work-6-450.jpg"
                     alt="веб-сайт"
                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
+                  </picture>
                   <div class="image-description">
                     <p class="image-description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -226,11 +393,37 @@
             <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <div class="image-combo">
-                  <img srcset="./images/portfolio-work-7.jpg 1x, ./images/portfolio-work-7@2x.jpg 2x"
-                    src="./images/portfolio-work-7.jpg"
+                  <picture>
+                    <source
+                      srcset="./images/portfolio-work-7-370.webp 370w"
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-7-354.webp 354w"
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-7-450.webp 450w"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-7-900.webp 2x"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                      ./images/portfolio-work-7-370.jpg 370w,
+                      ./images/portfolio-work-7-354.jpg 354w,
+                      ./images/portfolio-work-7-450.jpg 450w,
+                      ./images/portfolio-work-7-900.jpg 900w
+                    "
+                    src="./images/portfolio-work-7-450.jpg"
                     alt="дизайн"
                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
+                  </picture>
                   <div class="image-description">
                     <p class="image-description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -251,11 +444,37 @@
             <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <div class="image-combo">
-                  <img srcset="./images/portfolio-work-8.jpg 1x, ./images/portfolio-work-8@2x.jpg 2x"
-                    src="./images/portfolio-work-8.jpg"
+                  <picture>
+                    <source
+                      srcset="./images/portfolio-work-8-370.webp 370w"
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-8-354.webp 354w"
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-8-450.webp 450w"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-8-900.webp 2x"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                      ./images/portfolio-work-8-370.jpg 370w,
+                      ./images/portfolio-work-8-354.jpg 354w,
+                      ./images/portfolio-work-8-450.jpg 450w,
+                      ./images/portfolio-work-8-900.jpg 900w
+                    "
+                    src="./images/portfolio-work-8-450.jpg"
                     alt="маркетинг"
                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
+                  </picture>
                   <div class="image-description">
                     <p class="image-description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -274,11 +493,37 @@
             <li class="portfolio-item">
               <a href="#" class="portfolio-link link">
                 <div class="image-combo">
-                  <img srcset="./images/portfolio-work-9.jpg 1x, ./images/portfolio-work-9@2x.jpg 2x"
-                    src="./images/portfolio-work-9.jpg"
+                  <picture>
+                    <source
+                      srcset="./images/portfolio-work-9-370.webp 370w"
+                      media="(min-width:1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-9-354.webp 354w"
+                      media="(min-width:768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-9-450.webp 450w"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="./images/portfolio-work-9-900.webp 2x"
+                      type="image/webp"
+                    />
+                    <img
+                      srcset="
+                      ./images/portfolio-work-9-370.jpg 370w,
+                      ./images/portfolio-work-9-354.jpg 354w,
+                      ./images/portfolio-work-9-450.jpg 450w,
+                      ./images/portfolio-work-9-900.jpg 900w
+                    "
+                    src="./images/portfolio-work-9-450.jpg"
                     alt="додаток"
                     sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
                   />
+                  </picture>
                   <div class="image-description">
                     <p class="image-description-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -378,5 +623,63 @@
         </div>
       </div>
     </footer>
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="close-menu-icon" fill="currentColor" width="24" height="24">
+          <use href="./images/icons.svg#icon-close-menu"></use>
+        </svg>
+      </button>
+      <div class="site-nav-container--menu">
+        <ul class="site-nav--menu list">
+          <li class="site-nav__item--menu">
+            <a href="./index.html" class="site-nav__link--menu link">Студія</a>
+          </li>
+          <li class="site-nav__item--menu">
+            <a href="./portfolio.html" class="site-nav__link--menu link"
+              >Портфоліо</a
+            >
+          </li>
+          <li class="site-nav__item--menu">
+            <a href="#" class="site-nav__link--menu link">Контакти</a>
+          </li>
+        </ul>
+      </div>
+      <div class="contact-container--menu">
+        <ul class="contact--menu list">
+          <li class="contact__item--menu">
+            <a href="tel:+380961111111" class="contact__link--menu--blue link"
+              >+38 096 111 11 11</a
+            >
+          </li>
+          <li class="contact__item--menu">
+            <a href="mailto:info@devstudio.com" class="contact__link--menu link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="social-media--menu list">
+          <li class="social-media__item">
+            <a href="#" class="social-media__link link">Instagram</a>
+          </li>
+          <li class="social-media__item">
+            <a href="#" class="social-media__link link">Twitter</a>
+          </li>
+          <li class="social-media__item">
+            <a href="#" class="social-media__link link">Facebook</a>
+          </li>
+          <li class="social-media__item">
+            <a href="#" class="social-media__link link">LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
