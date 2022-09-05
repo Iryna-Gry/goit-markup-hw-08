@@ -9,12 +9,13 @@
 }
 .social-media__item {
   display: block;
-  &:not(:first-child) {
-    padding-left: 10px;
-  }
   &:not(:last-child) {
-    padding-right: 10px;
-    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    margin-right: 10px;
+    &::after {
+      content: '|';
+      @include font-box(500, 18px, 1.22, 0.02em);
+      color: rgba(33, 33, 33, 0.2);
+    }
   }
 }
 .social-media__link {

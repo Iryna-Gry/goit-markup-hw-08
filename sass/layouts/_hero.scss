@@ -2,14 +2,14 @@
 .hero {
   background-color: #c4c4c4;
   height: 400px;
-  max-width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
@@ -34,7 +34,7 @@
       ),
       url(../images/hero-img-480@2x.webp);
   }
-  @include tablet {
+  @media screen and (min-width: 481px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -64,6 +64,8 @@
     padding-top: 200px;
     padding-bottom: 200px;
     height: 600px;
+  }
+    @media screen and (min-width:769px) {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
@@ -87,6 +89,11 @@
           rgba(47, 48, 58, 0.4)
         ),
         url(../images/hero-img-1600@2x.webp);
+    }
+    @media screen and (min-width:1201px) {
+      width: 1600px;
+      background-position: center;
+      background-size: contain;
     }
   }
 }
