@@ -88,27 +88,25 @@ img {
 }
 
 .section-title {
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-  margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .section-title {
+    margin-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     letter-spacing: 0.03em;
-    margin-bottom: 50px;
   }
 }
 
 .thumb {
-  background: #f5f4fa;
-  border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -119,8 +117,10 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   height: 120px;
-  margin-bottom: 30px;
   width: 100%;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .vis-hidden {
@@ -276,14 +276,14 @@ img {
 }
 
 .site-nav__link {
+  position: relative;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  position: relative;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -320,8 +320,8 @@ img {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-left: auto;
     gap: 10px;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -352,11 +352,6 @@ img {
   margin-right: 10px;
 }
 .contact .contact__link {
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
-  fill: currentColor;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -366,6 +361,11 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  fill: currentColor;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -482,20 +482,20 @@ img {
   }
 }
 .member-list__title {
+  margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-  margin-bottom: 10px;
 }
 .member-list__position {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 16px;
 }
 
 .socials {
@@ -514,7 +514,6 @@ img {
 .socials__link {
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -524,6 +523,7 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  border-radius: 50%;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -590,13 +590,13 @@ img {
   }
 }
 .modal-title {
+  margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   color: #212121;
-  margin-bottom: 12px;
 }
 @media screen and (min-width: 1200px) {
   .modal-title {
@@ -607,10 +607,10 @@ img {
   }
 }
 .modal-form-button {
-  padding: 10px 52px;
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 52px;
 }
 
 .input-wrap {
@@ -632,9 +632,9 @@ img {
           justify-content: center;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
   fill: currentColor;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -664,9 +664,9 @@ img {
 .form-input {
   width: 100%;
   height: 40px;
+  padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 42px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -689,9 +689,9 @@ img {
   width: 100%;
   height: 120px;
   resize: none;
+  padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding: 12px 16px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -772,11 +772,6 @@ img {
 }
 
 .checkbox-label {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
-  color: #757575;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -787,30 +782,35 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin-bottom: 31px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 @media screen and (min-width: 1200px) {
   .checkbox-label {
+    margin-bottom: 30px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    margin-bottom: 30px;
   }
 }
 
 .checkbox-link {
+  margin-left: 4px;
   text-decoration: underline;
   color: #2196f3;
-  margin-left: 4px;
 }
 
 .policy-checkbox {
   display: inline-block;
 }
 .policy-checkbox:checked + .policy-icon {
-  fill: #ffffff;
   background-color: #2196f3;
   border-color: #2196f3;
+  fill: #ffffff;
   outline: transparent;
 }
 .policy-checkbox:focus + .policy-icon {
@@ -818,8 +818,6 @@ img {
 }
 
 .policy-icon {
-  width: 16px;
-  height: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -829,12 +827,14 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 16px;
+  height: 15px;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-right: 8px;
   fill: transparent;
   border: 2px solid #212121;
   border-radius: 4px;
-  margin-right: 8px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -900,30 +900,30 @@ img {
   position: absolute;
   bottom: 0;
   left: 0;
-  content: "";
-  background-color: #2196f3;
-  border-radius: 2px;
   width: 100%;
   height: 5px;
   margin-bottom: -1px;
+  content: "";
+  background-color: #2196f3;
+  border-radius: 2px;
 }
 
 /* -------------------------Hero ------------------------*/
 .hero {
-  background-color: #c4c4c4;
   height: 400px;
   width: 100%;
-  text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #c4c4c4;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img-480.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-480.jpg);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-img-480.webp);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-img-480.webp);
+  text-align: center;
 }
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
@@ -974,9 +974,9 @@ img {
 }
 @media screen and (min-width: 769px) and (min-width: 1201px) {
   .hero {
-    width: 1600px;
+    background-size: 1600px;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
   }
 }
 
@@ -990,15 +990,15 @@ img {
 }
 
 .hero__title {
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-  max-width: 360px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
@@ -1064,11 +1064,11 @@ img {
   }
 }
 .pros-list__title {
+  margin-bottom: 10px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: #212121;
-  margin-bottom: 10px;
   text-align: center;
 }
 @media screen and (min-width: 768px) {
@@ -1097,8 +1097,8 @@ img {
 }
 
 .occupation__item {
-  width: calc((100% - 60px) / 3);
   position: relative;
+  width: calc((100% - 60px) / 3);
 }
 .occupation__item:not(:last-child) {
   margin-right: 30px;
@@ -1184,9 +1184,6 @@ img {
 
 /* -------------------------Footer ------------------------*/
 .footer {
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1201,6 +1198,9 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
 }
 .footer-container {
   width: 100%;
@@ -1233,13 +1233,13 @@ img {
   }
 }
 .footer-title {
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  margin-bottom: 20px;
 }
 @media screen and (max-width: 1199px) {
   .footer-title {
@@ -1302,8 +1302,8 @@ img {
   margin-top: 20px;
 }
 .address-container {
-  text-align: center;
   margin-bottom: 60px;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .address-container {
@@ -1343,11 +1343,11 @@ img {
 .mailing-input {
   width: 100%;
   height: 50px;
+  padding-left: 16px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
-  padding-left: 16px;
-  margin-bottom: 20px;
 }
 @media screen and (min-width: 1200px) {
   .mailing-input {
@@ -1360,54 +1360,52 @@ img {
   outline: transparent;
 }
 .mailing-input::-webkit-input-placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  padding-top: 15px;
-  padding-bottom: 15px;
   color: rgba(255, 255, 255, 0.6);
 }
 .mailing-input::-moz-placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  padding-top: 15px;
-  padding-bottom: 15px;
   color: rgba(255, 255, 255, 0.6);
 }
 .mailing-input:-ms-input-placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  padding-top: 15px;
-  padding-bottom: 15px;
   color: rgba(255, 255, 255, 0.6);
 }
 .mailing-input::-ms-input-placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  padding-top: 15px;
-  padding-bottom: 15px;
   color: rgba(255, 255, 255, 0.6);
 }
 .mailing-input::placeholder {
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  padding-top: 15px;
-  padding-bottom: 15px;
   color: rgba(255, 255, 255, 0.6);
 }
 
 .form-button {
-  padding: 10px 28px;
-  fill: currentColor;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1417,6 +1415,8 @@ img {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 10px 28px;
+  fill: currentColor;
 }
 .form-button-icon {
   margin-left: 10px;
@@ -1457,6 +1457,8 @@ img {
 }
 
 .portfolio-button {
+  display: inline-block;
+  padding: 6px 22px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -1466,8 +1468,6 @@ img {
   background-color: #f5f4fa;
   border-radius: 4px;
   border: transparent;
-  padding: 6px 22px;
-  display: inline-block;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -1536,8 +1536,8 @@ img {
 }
 
 .description {
-  padding: 20px 24px;
   max-width: 450px;
+  padding: 20px 24px;
 }
 @media screen and (min-width: 768px) {
   .description {
@@ -1589,12 +1589,12 @@ img {
 }
 
 .portfolio .title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
-  margin-bottom: 4px;
 }
 
 .portfolio .type {

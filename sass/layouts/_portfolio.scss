@@ -23,6 +23,8 @@
   margin-right: 8px;
 }
 .portfolio-button {
+  display: inline-block;
+  padding: 6px 22px;
   @include font-box(500, 16px, 1.62);
   text-align: center;
   color: $secondary-text-color;
@@ -30,8 +32,6 @@
 
   border-radius: 4px;
   border: transparent;
-  padding: 6px 22px;
-  display: inline-block;
   transition: color $transform-duration $time-function,
     background-color $transform-duration $time-function,
     box-shadow $transform-duration $time-function;
@@ -78,8 +78,8 @@
   }
 }
   .description {
-    padding: 20px 24px;
     max-width: 450px;
+    padding: 20px 24px;
     @include tablet {
       max-width: 354px;
     }
@@ -111,9 +111,9 @@
   }
 }
 .portfolio .title {
+  margin-bottom: 4px;
   @include font-box(700, 18px, 2, 0.06em);
   color: $secondary-text-color;
-  margin-bottom: 4px;
 }
 .portfolio .type {
   @include font-box(null, 16px, 1.87);

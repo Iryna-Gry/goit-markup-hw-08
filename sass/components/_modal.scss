@@ -16,19 +16,19 @@
     max-width: 528px;
   }
   &-title {
+    margin-bottom: 12px;
     @include font-box(700, 20px, 1.5);
     text-align: center;
     color: $secondary-text-color;
-    margin-bottom: 12px;
     @include desktop {
       @include font-box(700, 20px, 1.15);
     }
   }
   &-form-button {
-    padding: 10px 52px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 10px 52px;
   }
 }
 .input-wrap {

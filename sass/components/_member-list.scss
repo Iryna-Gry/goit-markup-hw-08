@@ -26,14 +26,14 @@
     }
   }
   &__title {
+    margin-bottom: 10px;
     @include font-box(500, 16px, 1.19);
     text-align: center;
     color: $secondary-text-color;
-    margin-bottom: 10px;
   }
   &__position {
+    margin-bottom: 16px;
     @include font-box(null, 16px, 1.19);
     text-align: center;
-    margin-bottom: 16px;
   }
 }

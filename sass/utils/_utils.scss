@@ -68,22 +68,22 @@ img {
   }
 }
 .section-title {
+  margin-bottom: 30px;
   @include font-box(700, 28px, 1.18);
   text-align: center;
   color: $secondary-text-color;
-  margin-bottom: 30px;
   @include desktop {
-    @include font-box(700, 36px, 1.16);
     margin-bottom: 50px;
+    @include font-box(700, 36px, 1.16);
   }
 }
 .thumb {
-  background: $secondary-bg-color;
-  border-radius: 4px;
   @include flex;
   height: 120px;
-  margin-bottom: 30px;
   width: 100%;
+  margin-bottom: 30px;
+  background: $secondary-bg-color;
+  border-radius: 4px;
 }
 
 .vis-hidden {

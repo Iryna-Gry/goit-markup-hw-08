@@ -2,26 +2,26 @@
   margin-right: 8px;
 }
 .checkbox-label {
-  @include font-box(400, 12px, 1.17);
-  color: $primary-text-color;
   @include flex;
   margin-bottom: 31px;
+  @include font-box(400, 12px, 1.17);
+  color: $primary-text-color;
   @include desktop {
-    @include font-box(400, 14px, 1.71);
     margin-bottom: 30px;
+    @include font-box(400, 14px, 1.71);
   }
 }
 .checkbox-link {
+  margin-left: 4px;
   text-decoration: underline;
   color: $accent-color;
-  margin-left: 4px;
 }
 .policy-checkbox {
   display: inline-block;
   &:checked + .policy-icon {
-    fill: $tertiary-text-color;
     background-color: $accent-color;
     border-color: $accent-color;
+    fill: $tertiary-text-color;
     outline: transparent;
   }
   &:focus + .policy-icon {
@@ -29,15 +29,15 @@
   }
 }
 .policy-icon {
+  @include flex;
   width: 16px;
   height: 15px;
-  @include flex;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-right: 8px;
   fill: transparent;
   border: 2px solid $secondary-text-color;
   border-radius: 4px;
-  margin-right: 8px;
   transition: background-color $transform-duration $time-function,
     border-color $transform-duration $time-function,
     fill $transform-duration $time-function;

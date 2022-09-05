@@ -9,8 +9,8 @@
   display: flex;
 }
 .occupation__item {
-  width: calc((100% - 60px) / 3);
   position: relative;
+  width: calc((100% - 60px) / 3);
   &:not(:last-child) {
     margin-right: 30px;
   }

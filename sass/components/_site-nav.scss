@@ -11,12 +11,12 @@
   }
 }
 .site-nav__link {
-  @include font-box(500, null, 1.14, 0.02em);
-  color: $secondary-text-color;
+  position: relative;
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  position: relative;
+  @include font-box(500, null, 1.14, 0.02em);
+  color: $secondary-text-color;
   transition: color $transform-duration $time-function;
   &:hover,
   &:focus {

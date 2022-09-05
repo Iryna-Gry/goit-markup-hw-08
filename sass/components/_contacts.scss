@@ -4,8 +4,8 @@
   @include tablet {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
     gap: 10px;
+    margin-left: auto;
   }
   @include desktop {
     display: flex;
@@ -26,10 +26,10 @@
     margin-right: 10px;
   }
   & .contact__link {
+    @include flex;
     @include font-box(500, null, 1.14, 0.02em);
     color: $primary-text-color;
     fill: currentColor;
-    @include flex;
     transition: color $transform-duration $time-function;
     @include desktop {
       padding-top: 32px;
